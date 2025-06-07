@@ -1,0 +1,7 @@
+commands
+trading bot folder - uvicorn main:app --reload --port 8000
+ngrok folder - ngrok http 8000
+regular bash terminal outside of these 2 folders
+curl -X POST {ngrok_webhook_link}/webhook
+-H "Content-Type: application/json"
+-d '{"ticker":"VWO"}'
